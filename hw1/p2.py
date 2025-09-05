@@ -87,8 +87,16 @@ def multibit_negative(A):
         list, with the least significant digit be the first.
 
     """
-    # TODO: implement the function here
+    inv_bits = [1 - bit for bit in A]   #invert the bits first
+    #print(inv_bits)
+    a = [1]+[0]*(len(A)-1)
+    #print(a)
+    res = multibit_adder(inv_bits,a)
+    #print(res)
+    return res
 
+
+#multibit_negative([1,0,1,0])
 # We are now ready to implement subtraction using multibit_adder() and
 # multibit_negative().
 
@@ -109,4 +117,8 @@ def multibit_subtractor(A, B):
         digit be the first.
 
     """
-    # TODO: implement the function here
+    minus_B = multibit_negative(B)
+    A_minus_B = multibit_adder(A,minus_B)
+    #print(A_minus_B)
+    return A_minus_B
+#multibit_subtractor([1,0,1,0],[1,1,0,0])

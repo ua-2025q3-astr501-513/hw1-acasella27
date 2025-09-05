@@ -15,9 +15,9 @@
 # You may test your work by running `pip install -e .`
 
 [project]
-name = "hw1"
-version = ...
+name = "astr513-hw1"
+version = "1.1.0"
 dependencies = [
     "pytest",  # must include pytest because we use it for autograding
-    ...
+
 ]

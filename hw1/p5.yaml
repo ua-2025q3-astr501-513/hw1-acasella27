@@ -38,9 +38,8 @@
 
 # TODO: Edit this sample idea.
 
-- topic: Numerical Linear Algebra
-  idea:  Develop a fast matrix multiplication algorithm to reduce
-         energy consumption during deep learning inference.
+- topic: ODE Integrators
+  idea:  Implement and compare methods for solving the growth equation of linear matter perturbations using different cosmologies
 
 # TODO: Add two more project ideas below, following the same format as
 # the example above.
